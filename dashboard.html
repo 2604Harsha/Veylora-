@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Veylora</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dashboard-page">
+  <header class="dashboard-nav">
+    <a class="brand" href="dashboard.html"><span class="brand-icon">V</span> Veylora</a>
+    <div class="nav-user">
+      <span class="online-indicator"></span>
+      <span id="navUserName">User</span>
+      <button id="logoutButton" class="btn btn-small btn-outline">Logout ↗</button>
+    </div>
+  </header>
+
+  <main class="dashboard-main">
+    <section class="welcome-section">
+      <div>
+        <span class="eyebrow">PERSONAL WORKSPACE</span>
+        <h1>Welcome back, <span id="welcomeName" class="gradient-text">User</span>!</h1>
+        <p>Your Veylora account overview is ready.</p>
+      </div>
+      <div class="welcome-symbol">✦</div>
+    </section>
+
+    <section class="stats-grid">
+      <article class="stat-card">
+        <span class="stat-icon">◈</span>
+        <p>Account status</p>
+        <h2>Active</h2>
+        <span class="stat-sub">Your account is available</span>
+      </article>
+      <article class="stat-card">
+        <span class="stat-icon">✧</span>
+        <p>Account type</p>
+        <h2>Standard</h2>
+        <span class="stat-sub">Personal account</span>
+      </article>
+      <article class="stat-card">
+        <span class="stat-icon">◎</span>
+        <p>Access level</p>
+        <h2>User</h2>
+        <span class="stat-sub">Authenticated session</span>
+      </article>
+    </section>
+
+    <section class="dashboard-grid">
+      <article class="panel profile-panel">
+        <div class="panel-heading">
+          <div><span class="eyebrow">YOUR PROFILE</span><h2>Account information</h2></div>
+          <div class="profile-avatar" id="profileInitial">U</div>
+        </div>
+        <div class="profile-details">
+          <div class="detail-row"><span>Full name</span><strong id="profileName">—</strong></div>
+          <div class="detail-row"><span>Email address</span><strong id="profileEmail">—</strong></div>
+          <div class="detail-row"><span>Account created</span><strong id="profileDate">—</strong></div>
+          <div class="detail-row"><span>Account role</span><strong>User</strong></div>
+        </div>
+      </article>
+
+      <article class="panel security-panel">
+        <span class="eyebrow">ACCOUNT SECURITY</span>
+        <h2>You're signed in</h2>
+        <p>This demonstration dashboard is accessible after a successful frontend login.</p>
+        <div class="security-status"><span class="status-dot"></span> Demo session active</div>
+        <a href="forgot-password.html" class="text-link">Reset password →</a>
+      </article>
+    </section>
+
+    <div class="dashboard-footer">
+      <span>© 2026 Veylora</span>
+      <span>Your Identity. Your Access. Your Space.</span>
+    </div>
+  </main>
+
+  <script src="js/common.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

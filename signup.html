@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account | Veylora</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+  <a class="brand auth-brand" href="index.html"><span class="brand-icon">V</span> Veylora</a>
+
+  <main class="auth-container">
+    <section class="auth-card">
+      <div class="auth-heading">
+        <div class="mini-icon">✦</div>
+        <span class="eyebrow">JOIN VEYLORA</span>
+        <h1>Create your account</h1>
+        <p>Start your journey with a new digital identity.</p>
+      </div>
+
+      <form id="signupForm" novalidate>
+        <div class="form-group">
+          <label for="name">Full name</label>
+          <input type="text" id="name" placeholder="Enter your full name" autocomplete="name" required>
+          <small class="field-error" id="nameError"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" id="email" placeholder="you@example.com" autocomplete="email" required>
+          <small class="field-error" id="emailError"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <div class="password-wrapper">
+            <input type="password" id="password" placeholder="Minimum 6 characters" autocomplete="new-password" required>
+             <button type="button" class="password-toggle" id="togglePassword" aria-label="show password">Show</button>
+          </div>
+          <small class="field-error" id="passwordError"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="confirmPassword">Confirm password</label>
+          <div class="password-wrapper">
+            <input type="password" id="confirmPassword" placeholder="Re-enter your password" autocomplete="new-password" required>
+            <button type="button" class="password-toggle" id="toggleConfirmPassword" aria-label="show password">Show</button>
+          </div>
+          <small class="field-error" id="confirmPasswordError"></small>
+        </div>
+
+        <label class="terms">
+          <input type="checkbox" id="terms">
+          <span>I agree to the terms and privacy policy.</span>
+        </label>
+        <small class="field-error" id="termsError"></small>
+
+        <div id="signupMessage" class="message" role="status"></div>
+        <button type="submit" class="btn btn-full">Create Account <span>→</span></button>
+      </form>
+
+      <p class="auth-switch">Already have an account? <a href="login.html">Sign in</a></p>
+    </section>
+    <p class="auth-caption">Your Identity. Your Access. Your Space.</p>
+  </main>
+
+  <script src="js/common.js"></script>
+  <script src="js/signup.js"></script>
+</body>
+</html>
